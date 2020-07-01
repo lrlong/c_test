@@ -1,6 +1,9 @@
 #include <stdio.h>
-
-int main() {
-   printf("Hello World!");
-   return 0;
+ 
+int count ;
+extern void write_extern();
+ 
+main() {
+   count = 5;
+   write_extern();
 }
