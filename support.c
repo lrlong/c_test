@@ -13,3 +13,7 @@ void print_default(void) {
 void double_count(void) {
    printf("count is doubled %d\n", count * 2);
 }
+
+void triple_count(void) {
+   printf("count is tripled %d\n", count * 3);
+}
