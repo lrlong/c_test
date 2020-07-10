@@ -9,3 +9,7 @@ void write_extern(void) {
 void print_default(void) {
    printf("This is default print.");
 }
+
+void double_count(void) {
+   printf("count is doubled %d\n", count * 2);
+}
