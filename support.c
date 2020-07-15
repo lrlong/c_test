@@ -17,3 +17,7 @@ void double_count(void) {
 void triple_count(void) {
    printf("count is tripled %d\n", count * 3);
 }
+
+void subtract(void) {
+   printf("subtract one %d\n", count - 1);
+}
