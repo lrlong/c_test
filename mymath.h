@@ -6,6 +6,12 @@ void add(int a, int b)
 { 
 	printf("Added value=%d\n", a + b); 
 } 
+
+void subtraction(int a, int b)
+{
+	printf("Subtracted value=%d\n", a - b);
+}
+
 void multiply(int a, int b) 
 { 
 	printf("Multiplied value=%d\n", a * b); 
