@@ -1,6 +1,10 @@
 #include <stdio.h>
  
 extern int count;
+
+void read_extern(void) {
+   printf("Will attempt to do a 'read'");
+}
  
 void write_extern(void) {
    printf("count is %d\n", count);
