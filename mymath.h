@@ -16,3 +16,8 @@ void multiply(int a, int b)
 { 
 	printf("Multiplied value=%d\n", a * b); 
 } 
+
+void division(int a, int b)
+{
+	printf("Divided value=%d\n", a / b);
+}
