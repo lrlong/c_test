@@ -7,7 +7,7 @@ void read_extern(void) {
 }
  
 void write_extern(void) {
-   printf("count is %d\n", count);
+   printf("Count is %d\n", count);
 }
 
 void print_default(void) {
@@ -15,13 +15,13 @@ void print_default(void) {
 }
 
 void double_count(void) {
-   printf("count is doubled %d\n", count * 2);
+   printf("Count is doubled %d\n", count * 2);
 }
 
 void triple_count(void) {
-   printf("count is tripled %d\n", count * 3);
+   printf("Count is tripled %d\n", count * 3);
 }
 
 void offset_count(void) {
-   printf("subtract one %d\n", count - 1);
+   printf("Subtract one %d\n", count - 1);
 }
