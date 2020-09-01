@@ -9,3 +9,7 @@ int force_lightning(int power) {
 int force_choke(int strength) {
 	return targetTenacity - strength;
 }
+
+int force_push(int power) {
+	return targetTenacity - power;
+}
