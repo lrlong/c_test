@@ -23,3 +23,7 @@ int force_saber_throw(int accuracy, int strength){
 int force_heal(int lifeForce) {
 	return targetHealth * (lifeForce * 0.1);
 }
+
+int force_mind_trick(int power) {
+	return targetTenacity - (power * 0.1);
+}
