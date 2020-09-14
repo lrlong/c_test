@@ -6,7 +6,7 @@ extern void write_extern();
  
 main() {
    // Just a comment here
-   count = 50;
+   count = 10;
    write_extern();
    x = count * 2;
 }
