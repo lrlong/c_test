@@ -5,7 +5,8 @@ int count ;
 extern void write_extern();
  
 main() {
+   // Just a comment here
    count = 5;
    write_extern();
-   x = count * 2;
+   x = count * 3;
 }
