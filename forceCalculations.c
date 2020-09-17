@@ -4,6 +4,11 @@ extern int targetTenacity;
 extern int targetDefense;
 extern int targetHealth;
 
+int force_drain(int power) {
+	int x = power * (targetTenacity * 0.01);
+	return targetHealth * x;
+}
+
 int force_lightning(int power) {
 	return targetTenacity - (power * 2);
 }
@@ -13,17 +18,22 @@ int force_choke(int strength) {
 }
 
 int force_push(int power) {
-	return targetTenacity - power;
+	return (targetTenacity * 0.01) - power;
 }
 
 int force_saber_throw(int accuracy, int strength){
 	return targetDefense - (strength * accuracy);
 }
 
-int force_heal(int lifeForce) {
-	return targetHealth * (lifeForce * 0.1);
+int force_heal(int lifeForce, int power) {
+	int x = power * (lifeForce * 0.1);
+	return targetHealth + x;
 }
 
 int force_mind_trick(int power) {
 	return targetTenacity - (power * 0.1);
+}
+
+int force_pull(int power) {
+	return (targetTenacity * 0.01) - power; 
 }
