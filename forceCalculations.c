@@ -4,6 +4,10 @@ extern int targetTenacity;
 extern int targetDefense;
 extern int targetHealth;
 
+int force_test(int test) {
+	return test + 1;
+}
+
 int force_drain(int power) {
 	int x = power * (targetTenacity * 0.01);
 	return targetHealth * x;
@@ -26,6 +30,8 @@ int force_saber_throw(int accuracy, int strength){
 }
 
 int force_heal(int lifeForce, int power) {
+	// This is a test
+	// Some comment here for fun.
 	int x = power * (lifeForce * 0.1);
 	return targetHealth + x;
 }
