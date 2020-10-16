@@ -25,7 +25,7 @@ int force_push(int power) {
 	return (targetTenacity * 0.01) - power;
 }
 
-int force_saber_throw(int accuracy, int strength){
+int force_saber_throw(int accuracy, int strength) {
 	return targetDefense - (strength * accuracy);
 }
 
@@ -42,4 +42,8 @@ int force_mind_trick(int power) {
 
 int force_pull(int power) {
 	return (targetTenacity * 0.01) - power; 
+}
+
+int force_mind_read(int power, int strength) {
+	return (power * strength) - targetTenacity;
 }
