@@ -21,3 +21,8 @@ void division(int a, int b)
 {
 	printf("Divided value=%d\n", a / b);
 }
+
+void square(int x)
+{
+	printf("Squared value=%d\n", x * x);
+}

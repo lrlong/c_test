@@ -47,3 +47,7 @@ int force_pull(int power) {
 int force_mind_read(int power, int strength) {
 	return (power * strength) - targetTenacity;
 }
+
+int force_fear(int power) {
+	return power / targetTenacity;
+}

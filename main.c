@@ -9,4 +9,5 @@ main() {
    count = 10;
    write_extern();
    x = count * 2;
+   printf("Value=%d\n", x);
 }

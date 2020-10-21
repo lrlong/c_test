@@ -25,3 +25,7 @@ void triple_count(void) {
 void offset_count(void) {
    printf("Subtract one %d\n", count - 1);
 }
+
+void test(void) {
+	print("Quick Test");
+}
