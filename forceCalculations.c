@@ -14,7 +14,7 @@ int force_drain(int power) {
 }
 
 int force_lightning(int power) {
-	return targetTenacity - (power * 2);
+	return targetTenacity - (power * 0.01 * 2);
 }
 
 int force_choke(int strength) {
