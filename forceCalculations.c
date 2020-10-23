@@ -32,7 +32,6 @@ int force_saber_throw(int accuracy, int strength) {
 int force_heal(int lifeForce, int power, int strength) {
 	int y = power * strength;
 	int x = power * (lifeForce * 0.1);
-	int z = x + y;
 	return targetHealth + x;
 }
 
