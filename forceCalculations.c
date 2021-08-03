@@ -32,11 +32,11 @@ int force_saber_throw(int accuracy, int strength) {
 int force_heal(int lifeForce, int power, int strength) {
 	int y = power * strength;
 	int x = power * (lifeForce * 0.1);
-	return targetHealth + x;
+	return targetHealth + (x / y);
 }
 
 int force_mind_trick(int power) {
-	return targetTenacity - (power * 0.1);
+	return targetTenacity - (power * 0.15);
 }
 
 int force_pull(int power) {
@@ -48,5 +48,6 @@ int force_mind_read(int power, int strength) {
 }
 
 int force_fear(int power) {
-	return power / targetTenacity;
+	int tenacityTotal = targetTenacity * .65;
+	return power / tenacityTotal;
 }
