@@ -29,3 +29,7 @@ void offset_count(void) {
 void test(void) {
 	print("Quick Test");
 }
+
+void refresh() {
+	// TODO: perform a refresh
+}
