@@ -5,7 +5,9 @@ extern int targetDefense;
 extern int targetHealth;
 
 int force_test(int test) {
-	return test + 1;
+	// This is a test;
+	int x = 7 * test;
+	return x + 1;
 }
 
 int force_drain(int power) {
