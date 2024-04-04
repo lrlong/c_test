@@ -7,7 +7,7 @@ extern int targetHealth;
 int force_test(int test) {
 	// This is a test;
 	int x = 5 * test;
-	return x + 1;
+	return x + 2;
 }
 
 int force_drain(int power) {
@@ -24,17 +24,17 @@ int force_choke(int strength) {
 }
 
 int force_push(int power) {
-	return (targetTenacity * 0.01) - power;
+	return (targetTenacity * 0.015) - power;
 }
 
 int force_saber_throw(int accuracy, int strength) {
-	return targetDefense - (strength * accuracy) / 2;
+	return targetDefense - (strength * accuracy) / 1.5;
 }
 
 int force_heal(int lifeForce, int power, int strength) {
 	int y = power * strength;
 	int x = power * (lifeForce * 0.15);
-	return targetHealth + (x / y) * 2;
+	return targetHealth + (x / y) * 1.5;
 }
 
 int force_mind_trick(int power) {
